@@ -2,11 +2,21 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\TaskController; // Import controller
+use App\Http\Controllers\Api\EventController; // Import EventController
+use App\Http\Controllers\Api\TaskController;  // Import TaskController
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+*/
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// Ini akan membuat rute seperti GET /api/tasks, POST /api/tasks, dll.
-Route::apiResource('tasks', TaskController::class);
+// Rute API untuk mendapatkan semua event
+Route::get('/events', [EventController::class, 'index']);
+
+// Rute API Resource untuk mengelola tasks
+Route::get('/weather', [WeatherController::class, 'getWeather']);

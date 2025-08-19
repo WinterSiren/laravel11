@@ -2,22 +2,11 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\EventController; // Baris ini penting
-
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
-*/
+use App\Http\Controllers\Api\TaskController; // Import controller
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// TAMBAHKAN RUTE INI: Rute API untuk mendapatkan semua event
-Route::get('/events', [EventController::class, 'index']);
+// Ini akan membuat rute seperti GET /api/tasks, POST /api/tasks, dll.
+Route::apiResource('tasks', TaskController::class);

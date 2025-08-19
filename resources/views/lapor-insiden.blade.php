@@ -33,7 +33,7 @@
                         <input type="text" name="subjek" id="subjek" required class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Contoh: Situs web diretas, Akun email disusupi">
                     </div>
 
-                    <!-- Deskripsi Insiden -->
+                    
                     <div>
                         <label for="deskripsi" class="block text-sm font-medium text-gray-300 mb-1">Deskripsi Lengkap Insiden</label>
                         <textarea name="deskripsi" id="deskripsi" rows="6" required class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Jelaskan kronologi kejadian, waktu, dan dampak yang ditimbulkan..."></textarea>

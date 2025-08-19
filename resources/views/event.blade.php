@@ -10,7 +10,7 @@
             <!-- KITA AKAN MENGISI DAFTAR EVENT DI SINI DENGAN JAVASCRIPT -->
             <div id="event-list" class="max-w-4xl mx-auto space-y-6">
                 <!-- Tampilan loading sementara -->
-                <p class="text-center text-gray-400">Memuat event...</p>
+                <p class="text-center text-gray-400">Loading...</p>
             </div>
         </div>
     </div>
